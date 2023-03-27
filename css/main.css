@@ -23,9 +23,15 @@
     --transition: all .3s linear;
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
+
 body {
     font-family: var(--main-font);
     height: 1000vh;
+    overflow-x: hidden;
 }
 
 p {
@@ -59,7 +65,6 @@ ul {
 
  ::-webkit-scrollbar-thumb {
     background: var(--main-color);
-    border-radius: 55px;
 }
 
 
@@ -67,6 +72,26 @@ ul {
 
  ::-webkit-scrollbar-thumb:hover {
     background: #555;
+}
+
+
+/*-------------------------------------------------------------------*/
+
+.col-4 {
+    flex: 0 0 auto;
+    width: 33.333333% !important;
+}
+
+@media (max-width: 991px) {
+    .col-4 {
+        width: 50% !important;
+    }
+}
+
+@media (max-width: 483px) {
+    .col-4 {
+        width: 100% !important;
+    }
 }
 
 .btn {
@@ -456,7 +481,7 @@ ul {
 
 @media only screen and (max-width: 767px) {
     .banner {
-        padding-top: 4.5rem;
+        padding-top: 1rem;
     }
     .banner .content-slide {
         margin-bottom: 2.3rem;
@@ -466,16 +491,22 @@ ul {
     }
 }
 
+@media only screen and (max-width: 455px) {
+    .btn {
+        padding: .75rem 1rem;
+    }
+}
+
 @media only screen and (max-width: 380px) {
     .banner .content-slide {
         margin-left: 15px;
     }
-}
-
-@media only screen and (max-width: 349px) {
     .banner .content-slide h1 {
         font-size: 1.3rem;
     }
+}
+
+@media only screen and (max-width: 349px) {
     .banner .content-slide .desc_banner p {
         font-size: 12.3px;
     }
@@ -684,7 +715,7 @@ ul {
 .services .card {
     border: none;
     background: #ffffff;
-    padding: 1.6rem;
+    padding: 2rem;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
     margin-bottom: 1.5rem;
 }
@@ -751,6 +782,7 @@ ul {
     box-shadow: 0 5px 20px 0 rgba(23, 44, 82, 0.1);
     border: none;
     border-radius: 0;
+    margin-left: 10px;
 }
 
 .featured .card img {
@@ -763,6 +795,7 @@ ul {
     color: #fff;
     transition: var(--transition);
     overflow: hidden;
+    display: block;
 }
 
 .featured .card:hover img {
@@ -873,12 +906,50 @@ ul.desc-flat li span {
     margin-bottom: 2.5px;
 }
 
+.tns-outer {
+    position: relative;
+}
+
+.tns-nav {
+    position: absolute;
+    left: 50%;
+    bottom: -14px;
+    z-index: 2;
+}
+
+.tns-nav>[aria-controls] {
+    width: 9px;
+    height: 9px;
+    padding: 0;
+    margin: 0 5px;
+    border-radius: 50%;
+    background: var(--paragraph-color);
+    border: 0;
+}
+
+.tns-nav>.tns-nav-active {
+    background: var(--main-color);
+}
+
+.tns-controls {
+    display: none;
+}
+
 
 /*============= Responsive Featured =================*/
 
-
-/* @media only screen and (max-width: 1199px) {
-    .swiper-slide {
-        width: 50% !important;
+@media only screen and (max-width: 800px) {
+    .featured .container {
+        width: 100% !important;
+        max-width: 100% !important;
     }
-} */
+}
+
+@media only screen and (max-width: 720px) {
+    .featured .card-body .card-title {
+        font-size: 1.1rem;
+    }
+    .featured .card-body .card-text {
+        font-size: .8rem;
+    }
+}

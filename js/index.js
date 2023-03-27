@@ -1,3 +1,11 @@
+try {
+  AOS.init({
+    duration: 1000,
+  });
+} catch (error) {
+  console.log(error);
+}
+
 /* ================= Change Background ==================*/
 const navbar = document.querySelector(".navbar");
 
@@ -11,7 +19,7 @@ window.addEventListener("scroll", (event) => {
 /* ================= Menu Responsive ==================*/
 const menuIcon = document.querySelector("#menu-icon");
 const menu = document.querySelector(".menu");
-menuIcon.addEventListener("click", () => {
+menuIcon.addEventListener("mouseover", () => {
   menu.classList.toggle("active_menu");
 });
 
@@ -28,13 +36,43 @@ try {
 }
 
 /* ================= Swiper Featured ==================*/
+
 try {
-  var swiper = new Swiper(".featured-slide", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+  var slider = tns({
+    container: ".featured-slide",
+    items: 3,
+    rewind: true,
+    swipeAngle: false,
+    speed: 400,
+    mouseDrag: true,
+    responsive: {
+      100: {
+        items: 1,
+      },
+      200: {
+        items: 1,
+      },
+      300: {
+        items: 1,
+      },
+
+      400: {
+        items: 1,
+      },
+
+      500: {
+        items: 1,
+      },
+
+      600: {
+        items: 1,
+      },
+      650: {
+        items: 2,
+      },
+      1200: {
+        items: 3,
+      },
     },
   });
 } catch (error) {
