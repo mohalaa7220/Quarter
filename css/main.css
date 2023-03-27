@@ -8,7 +8,7 @@
 
 /*============= Var =================*/
 
-:root {
+ :root {
     --main-color: #FF5A3C;
     --sec-opacity-color: #FFEFEC;
     --sec-bag: #F2F6F7;
@@ -30,7 +30,6 @@ body {
 
 body {
     font-family: var(--main-font);
-    height: 1000vh;
     overflow-x: hidden;
 }
 
@@ -49,7 +48,7 @@ ul {
 
 /* width */
 
-::-webkit-scrollbar {
+ ::-webkit-scrollbar {
     width: 8px;
 }
 
@@ -998,3 +997,31 @@ ul.desc-flat li span {
     margin-top: 10px;
     line-height: 1.7;
 }
+
+.testimonial .card-footer {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    margin-top: 1.1rem;
+}
+
+.testimonial .card-footer img {
+    max-width: 60px;
+    margin-right: 15px;
+    margin-bottom: 0;
+    border-radius: 50%;
+}
+
+.testimonial .card-footer .customer h6 {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.testimonial .card-footer .customer span {
+    color: var(--paragraph-color);
+}
+
+
+/* ============ Footer ==========*/
