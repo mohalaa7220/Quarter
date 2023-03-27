@@ -913,7 +913,7 @@ ul.desc-flat li span {
 .tns-nav {
     position: absolute;
     left: 50%;
-    bottom: -14px;
+    bottom: -40px;
     z-index: 2;
 }
 
@@ -952,4 +952,49 @@ ul.desc-flat li span {
     .featured .card-body .card-text {
         font-size: .8rem;
     }
+}
+
+
+/* =========== testimonial ==========*/
+
+.testimonial {
+    background-image: url("../images/test_back.jpg");
+    background-size: auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.testimonial .card {
+    border: none;
+    background: #ffffff;
+    padding: 2rem;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    margin-bottom: 1.5rem;
+}
+
+.testimonial .card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    transition: var(--transition);
+    background-color: var(--main-color);
+}
+
+.testimonial .card:hover::after {
+    width: 100%;
+}
+
+.info_testimonial .bxs-quote-alt-left {
+    color: var(--paragraph-color);
+    font-size: 2.5rem;
+}
+
+.info_testimonial p {
+    color: var(--paragraph-color);
+    margin: 0;
+    margin-top: 10px;
+    line-height: 1.7;
 }
