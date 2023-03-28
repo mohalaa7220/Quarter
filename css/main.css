@@ -188,7 +188,7 @@ ul {
 
 .navbar {
     box-shadow: var(--shadow);
-    padding: 1.8rem 0;
+    padding: 1.5rem 0;
 }
 
 .navbar-active {
@@ -274,7 +274,7 @@ ul {
 
 .navbar .nav-item .nav-link {
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: 600;
     color: var(--paragraph-color);
     text-transform: uppercase;
 }
