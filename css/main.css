@@ -33,6 +33,10 @@ body {
     overflow-x: hidden;
 }
 
+a {
+    text-decoration: none;
+}
+
 p {
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
