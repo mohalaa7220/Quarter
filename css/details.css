@@ -1,3 +1,10 @@
+@media only screen and (max-width: 575px) {
+    .content_details .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
 .content_details .top-content {
     display: flex;
     align-items: center;
@@ -75,7 +82,6 @@ li:is(.date, .comments) span {
     padding: 30px 50px 40px;
     margin: 0;
     border-right: 1px solid #d1dae0;
-    margin-bottom: .5rem;
 }
 
 .property_detail_list ul:nth-child(2) {
@@ -99,6 +105,16 @@ li:is(.date, .comments) span {
 }
 
 
+/*============= Responsive Featured =================*/
+
+@media only screen and (max-width: 767px) {
+    .property_detail_list>ul {
+        border: none;
+        padding: 12px 25px 11px;
+    }
+}
+
+
 /* facts_features_list */
 
 .facts_features_list {
@@ -111,7 +127,7 @@ li:is(.date, .comments) span {
 }
 
 .facts_features_list>li .feature-list-item {
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.4rem;
     display: flex;
     align-items: center;
 }
@@ -204,4 +220,47 @@ li:is(.date, .comments) span {
     .amenities_list li {
         width: 100%;
     }
+}
+
+.left_side {
+    padding-right: 36px;
+}
+
+.facts_features {
+    margin-top: 40px;
+}
+
+.amenities {
+    margin-top: 30px;
+}
+
+
+/* Right Side */
+
+.widget {
+    margin-bottom: 40px;
+    padding: 35px 30px 40px 25px;
+    border: 2px solid #ededed;
+}
+
+.right_side input[type="text"],
+.right_side input[type="email"],
+.right_side input[type="password"],
+.right_side input[type="submit"],
+.right_side textarea {
+    background-color: #fff;
+    border: 2px solid #e4ecf2;
+    height: 65px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding-left: 20px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 0;
+    padding-right: 40px;
+}
+
+.right_side textarea {
+    height: 90px;
 }
