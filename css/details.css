@@ -1,0 +1,67 @@
+.content_details {
+    background-color: var(--sec-bag);
+}
+
+.content_details .top-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.content_details .top-content li {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    margin-bottom: 7px;
+}
+
+li.status {
+    background-color: #62ab14;
+    padding: .3rem 1rem;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+li:is(.date, .comments)>.bx {
+    color: var(--main-color);
+    margin-right: 4px;
+}
+
+li:is(.date, .comments) span {
+    color: var(--paragraph-color);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+
+/* content */
+
+.content_details .content {
+    margin-top: 45px;
+}
+
+.content_details .content h1 {
+    font-family: var(--heading-font);
+    font-weight: 800;
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.content-head {
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-weight: 600;
+    border-left: 2px solid var(--main-color);
+    padding-left: 10px;
+}
+
+.content .desc {
+    margin-bottom: 35px;
+}
+
+.content .desc p {
+    line-height: 1.8;
+    color: var(--paragraph-color);
+}

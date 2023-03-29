@@ -78,3 +78,45 @@ try {
 } catch (error) {
   console.log(error);
 }
+
+try {
+  var slider = tns({
+    container: ".gallery-slide",
+    items: 3,
+    rewind: true,
+    swipeAngle: false,
+    speed: 400,
+    mouseDrag: true,
+    responsive: {
+      100: {
+        items: 1,
+      },
+      200: {
+        items: 1,
+      },
+      300: {
+        items: 1,
+      },
+
+      400: {
+        items: 1,
+      },
+
+      500: {
+        items: 1,
+      },
+
+      600: {
+        items: 1,
+      },
+      650: {
+        items: 2,
+      },
+      1200: {
+        items: 3,
+      },
+    },
+  });
+} catch (error) {
+  console.log(error);
+}

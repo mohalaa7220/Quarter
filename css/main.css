@@ -146,6 +146,28 @@ ul {
     border-radius: 0;
 }
 
+.breadcrumb-parent {
+    background-image: url("../images/image_top.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.breadcrumb-parent h2 {
+    font-weight: 800;
+    margin-bottom: 25px;
+    font-family: var(--heading-font);
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+    color: var(--paragraph-color);
+}
+
+.breadcrumb-item.active {
+    color: var(--main-color);
+    font-weight: 800;
+}
+
 
 /*============= header-top =================*/
 
