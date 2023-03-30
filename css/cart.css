@@ -1,0 +1,25 @@
+tbody {
+    border-bottom: 1px solid #dee2e6;
+}
+
+td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.table img {
+    width: 8rem;
+}
+
+.table a {
+    color: var(--header-bg);
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.cart-plus-minus,
+.dec.qtybutton,
+.inc.qtybutton {
+    border: 2px solid #dee2e6;
+    font-weight: 700;
+}
