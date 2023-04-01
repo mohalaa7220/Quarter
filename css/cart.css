@@ -1,25 +1,59 @@
-tbody {
-    border-bottom: 1px solid #dee2e6;
-}
-
-td {
-    vertical-align: middle;
+.shopping-cart-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     text-align: center;
+    padding: 20px;
+    margin-bottom: 1rem;
 }
 
-.table img {
+.shopping-cart-inner:nth-child(even) {
+    background-color: var( --sec-bag);
+}
+
+.shopping-cart-inner img {
     width: 8rem;
+    border-radius: 7px;
 }
 
-.table a {
-    color: var(--header-bg);
-    font-weight: 800;
-    font-size: 1.2rem;
+.shopping-cart-inner .qty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.cart-plus-minus,
-.dec.qtybutton,
-.inc.qtybutton {
-    border: 2px solid #dee2e6;
+.shopping-cart-inner .qty input,
+.shopping-cart-inner .qty span {
+    border: 2px solid #ededed;
+    height: 63px;
+    line-height: 56px;
+    width: 70px;
+    text-align: center;
     font-weight: 700;
+}
+
+.shopping-cart-inner .qty span {
+    cursor: pointer;
+}
+
+.shopping-cart-inner .qty .form-control {
+    border-radius: 0;
+}
+
+.shopping-cart-inner>div {
+    min-width: 150px;
+    width: 150px;
+}
+
+.shopping-cart-inner .delete {
+    cursor: pointer;
+    padding: 1.2rem;
+}
+
+.shopping-cart-inner .delete span {
+    font-weight: 700;
+}
+
+.shopping-cart-inner .delete:hover span {
+    color: var(--main-color);
 }
