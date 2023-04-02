@@ -23,6 +23,17 @@ menuIcon.addEventListener("mouseover", () => {
   menu.classList.toggle("active_menu");
 });
 
+/* ================= Cart Slide ==================*/
+const btnCart = document.querySelector("#btn-cart");
+const cartSlide = document.querySelector(".cart-slide");
+const closeCart = document.querySelector(".close-cart");
+btnCart.addEventListener("click", () => {
+  cartSlide.classList.add("right");
+});
+closeCart.addEventListener("click", () => {
+  cartSlide.classList.remove("right");
+});
+
 /* ================= Swiper Banner ==================*/
 try {
   var swiper = new Swiper(".banner", {
