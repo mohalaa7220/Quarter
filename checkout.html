@@ -204,7 +204,95 @@
       <div class="container">
         <h4 class="content-head">Billing Details</h4>
         <div class="checkout-container">
-          <h6>Personal Information</h6>
+          <form action="#" method="POST">
+            <!-- Personal Information -->
+            <h6>Personal Information</h6>
+            <div class="row">
+              <div class="col-md-6">
+                <input type="text" name="name" placeholder="Name" />
+              </div>
+              <div class="col-md-6">
+                <input type="email" name="email" placeholder="Email" />
+              </div>
+              <div class="col-md-6">
+                <input type="tel" name="phone" placeholder="Phone Number" />
+              </div>
+              <div class="col-md-6">
+                <select class="form-select" aria-label="area">
+                  <option selected>Country</option>
+                  <option value="1">Egypt</option>
+                  <option value="2">SKA</option>
+                  <option value="3">USA</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Address -->
+            <h6>Address</h6>
+            <div class="row">
+              <div class="col-md-6">
+                <input
+                  type="text"
+                  name="address"
+                  placeholder="House number and street name"
+                />
+              </div>
+              <div class="col-md-6">
+                <input
+                  type="text"
+                  name="address2"
+                  placeholder="Apartment, suite, unit etc. (optional)"
+                />
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <h6>Town/City</h6>
+                <input type="text" name="town" placeholder="Town/City" />
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <h6>state</h6>
+                <input type="text" name="town" placeholder="state" />
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <h6>zip</h6>
+                <input type="text" name="town" placeholder="zip" />
+              </div>
+            </div>
+            <div class="col-12">
+              <h6>Order Notes (optional)</h6>
+              <textarea
+                name="message"
+                placeholder="Notes about your order, e.g. special notes for delivery."
+              ></textarea>
+            </div>
+          </form>
+        </div>
+
+        <!-- Bottom Order -->
+        <div class="row">
+          <div class="col-lg-6">
+            <h4 class="content-head">Payment Method</h4>
+          </div>
+          <div class="col-lg-6">
+            <h4 class="content-head">Cart Totals</h4>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <span>Brake Conversion Kit × 2</span>
+                <span>$298.00</span>
+              </li>
+              <li class="list-group-item">
+                <span>Brake Conversion Kit × 2</span>
+                <span>$298.00</span>
+              </li>
+              <li class="list-group-item">
+                <span>Brake Conversion Kit × 2</span>
+                <span>$298.00</span>
+              </li>
+              <li class="list-group-item">
+                <h6>Order Total</h6>
+                <strong>$633.00</strong>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
