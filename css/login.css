@@ -10,6 +10,7 @@
 }
 
 input[type="email"],
+input[type="text"],
 input[type="password"] {
     background-color: #fff;
     border: 2px solid #e4ecf2;

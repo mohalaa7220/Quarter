@@ -52,7 +52,7 @@ ul {
 
 /* width */
 
- ::-webkit-scrollbar {
+body::-webkit-scrollbar {
     width: 8px;
 }
 

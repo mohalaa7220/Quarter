@@ -5,6 +5,7 @@
     text-align: center;
     padding: 20px;
     margin-bottom: 1rem;
+    overflow-x: auto;
 }
 
 .shopping-cart-inner:nth-child(even) {
